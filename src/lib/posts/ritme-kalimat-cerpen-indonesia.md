@@ -145,7 +145,7 @@ excerpt: Visualisasi ritme kalimat dari 1.252 cerpen Indonesia. Bagaimana cerpen
 Tulisan dari Gary Provost ini nongol di linimasa saya:
 
 ![Gary Provost ><](/images/gary-provost.png)
-_caption ????_
+_Gary Provost._
 
 Tulisan tak hanya soal apa yang ingin disampaikan, tapi juga tentang bagaimana ia dibaca. Paragraf pertama dari Gary Provost adalah contoh tulisan monoton. Tak memiliki ritme. Ritme adalah salah satu hal yang mendorong pembaca untuk terus membaca. Ritme tulisan bisa membangun suasana hati pembaca. Lihat bagaimana Provost memberi ritme pada tulisannya di paragraf kedua dan ketiga. Tulisan menjadi hidup.
 
