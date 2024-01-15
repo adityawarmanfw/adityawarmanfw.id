@@ -10,9 +10,10 @@ const config = {
 	},
 	optimizeDeps: {
 		exclude: [
-			'codemirror',
-			'@codemirror/language-javascript',
-			'@codemirror/language-sql',
+			"@codemirror/state",
+			"@codemirror/view",
+			"@codemirror/lang-sql",
+			"codemirror",
 			'jsdom' /* ... */
 		]
 	}

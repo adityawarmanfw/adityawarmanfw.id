@@ -6,4 +6,4 @@ import { page } from '$app/stores'
 <h2>{$page.status}</h2>
 <p class="subhead">{$page.error.message}</p>
 
-<p><strong>Maaf!</strong> Coba kembali ke <a href="/">laman muka</a></p>
+<p><strong>Maaf!</strong> Coba kembali ke <a href="/">laman awal</a></p>
