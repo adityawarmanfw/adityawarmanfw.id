@@ -1,0 +1,219 @@
+@use './prism';
+@import './fonts.css';
+
+body {
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+	font-weight: 400;
+}
+
+a {
+	color: #fe6422;
+	text-decoration: none;
+
+	&:hover {
+		color: #40b3ff;
+	}
+}
+
+code {
+	font-family: 'Iosevka Term SS08 Web', 'Fira Mono', monospace !important;
+	font-size: 0.9rem;
+	font-weight: 400;
+}
+
+h1 {
+	font-family: 'Hanken Grotesk';
+	font-size: 1.4rem;
+	font-weight: 700;
+	color: #000;
+}
+
+h2 {
+	font-family: 'Hanken Grotesk';
+	font-size: 1.4rem;
+	font-weight: 700;
+	color: #444;
+}
+
+h3 {
+	font-family: 'Hanken Grotesk';
+	font-size: 1.2rem;
+	color: #222;
+}
+
+p,
+ul,
+ol {
+	font-size: 1.1rem;
+	line-height: 1.5;
+	color: #444;
+
+	&.info {
+		font-size: 1rem;
+		margin-top: 0px;
+	}
+}
+
+.layout {
+	margin: 0 auto;
+	padding: 1rem;
+	max-width: 65ch !important;
+	// min-height: 100vh;
+}
+
+.site-title {
+	display: block;
+	justify-content: space-between;
+	align-items: baseline;
+	font-size: 1.6rem;
+	font-weight: 700;
+	color: #222;
+}
+
+nav {
+	display: flex;
+
+	// max-width: 768px;
+	// text-transform: uppercase;
+	ul {
+		list-style-type: none;
+		padding-inline-start: 0;
+	}
+
+	li {
+		list-style-type: none;
+	}
+}
+
+.posts-list {
+	display: block;
+	list-style-type: none;
+	padding-inline-start: 0;
+
+	li {
+		padding-top: 0.4rem;
+	}
+
+	h2 {
+		margin: 0.2rem auto;
+
+		&:hover {
+			color: #40b3ff;
+		}
+	}
+
+	p {
+		margin-top: 0.2rem;
+	}
+}
+
+.post-list-tags {
+	display: inline-block;
+
+	ul {
+		font-size: 0.8rem;
+		list-style-type: none;
+		padding-inline-start: 0;
+	}
+
+	li {
+		float: left;
+		padding-right: 10px;
+		text-transform: uppercase;
+	}
+}
+
+.callout {
+	background-color: #b9d9ed;
+	padding: 1rem 1rem;
+	// width: 100%;
+	max-width: unset;
+	// margin: 2rem 0 2rem 0;
+	font-style: italic;
+	border-radius: 0.125rem;
+}
+
+.post {
+	h1 {
+		margin-bottom: 1rem;
+		font-size: 2rem;
+	}
+
+	.excerpt {
+		font-size: 1.2rem;
+		margin-bottom: 2.4rem;
+	}
+
+	.meta {
+		font-size: 0.8rem;
+	}
+
+	ol,
+	ul {
+		font-size: 1.1rem;
+		line-height: 1.5;
+	}
+
+	img + h1 {
+		margin-top: 1rem;
+	}
+
+	img[alt$='>'] {
+		float: right;
+	}
+
+	img[alt$='<'] {
+		float: left;
+	}
+
+	img[alt$='><'] {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		margin: auto;
+		float: none !important;
+	}
+
+	img + em {
+		text-align: center;
+		font-size: 0.9rem;
+		font-style: italic;
+		color: grey;
+	}
+
+	.post-footer {
+		display: inline-block;
+
+		ul {
+			font-size: 0.8rem;
+			list-style-type: none;
+			padding-inline-start: 0;
+		}
+
+		li {
+			float: left;
+			padding-right: 10px;
+			text-transform: uppercase;
+		}
+	}
+}
+
+footer {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	// width: 100%;
+	height: 2rem;
+	/* Footer height */
+}
+
+// table {
+//   border: 1px solid #333;
+//   max-width: 768px;
+//   font-family: 'Fira Mono', monospace !important;
+//   font-size: 0.8rem;
+//   tr td,
+//   tr th {
+//     box-shadow: 0px 1px #333;
+//   }
+// }

@@ -1,0 +1,17 @@
+import { error } from '@sveltejs/kit';
+
+export const ssr = true;
+export const prerender = true;
+
+export const load = async ({ params }) => {
+	try {
+		const post = await import(`../../lib/posts/${params.post}.md`);
+
+		return {
+			PostContent: post.default,
+			meta: { ...post.metadata, slug: params.post }
+		};
+	} catch (err) {
+		throw error(404, err);
+	}
+};
