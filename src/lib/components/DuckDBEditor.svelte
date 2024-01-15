@@ -141,7 +141,7 @@
 	</div>
 	<div class="my-4">
 		<button
-			on:click={() => {
+			on:release={() => {
 				execute(value);
 			}}
 			title="Execute Query"
