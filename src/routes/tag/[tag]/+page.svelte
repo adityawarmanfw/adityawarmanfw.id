@@ -7,10 +7,10 @@
 </script>
 
 <svelte:head>
-	<title>Tag: {tag}</title>
+	<title>{tag.toUpperCase()} - adityawarmanfw.id</title>
 </svelte:head>
 
-<h1>Tag: {tag}</h1>
+<h1>{tag.toUpperCase()}</h1>
 
 {#if posts.length}
 	<PostsList {posts} />
