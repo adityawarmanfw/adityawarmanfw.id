@@ -7,6 +7,7 @@ isPublished: true
 tags: 
     - cerita
     - selain-data
+excerpt: Setidaknya orang-orang di kota ini percaya, bahwa sekadar gerimis tak akan membuat kota ini mati. Kota ini masih hidup dan terus siap menjadi saksi atas segala peristiwa yang akan terjadi.
 ---
 
 Gerimis baru saja berhenti mengguyur kota ini. Aspal yang terbentang di sepanjang jalan tampak mengkilap basah dan memantulkan kembali lampu-lampu kendaraan yang melintas di atasnya. Trotoar masih sedikit becek, tapi mulai banyak orang-orang berlalu-lalang. Setidaknya orang-orang di kota ini percaya, bahwa sekadar gerimis tak akan membuat kota ini mati. Kota ini masih hidup dan terus siap menjadi saksi atas segala peristiwa yang akan terjadi.
