@@ -38,7 +38,6 @@ Beginilah kita diperjumpakan. Satu hari di sebuah rumah di Wonokromo, ia berdiri
 
 > “Kulitnya halus laksana beledu putih gading. Matanya gemilang seperti kejora. Tak bakal kuat orang memandangnya terlalu lama. Sepasang alis melindungi sepasang kejora itu, lebat seperti punggung bukit sana. Bentuk badannya idaman setiap pria. Maka seluruh negeri sayang padanya. Suaranya lunak, memikat hati barangsiapa mendengarnya. Kalau dia tersenyum, tergoncang iman setiap dan semua pria. Dan kalau tertawa gigi putihnya tampak gemerlapan memberi pengharapan pada semua pemuja.”
 
-![](__GHOST_URL__/content/images/max/800/1-9TsiX-kESTcugHcQcbF7gQ.png)Bermata kejora.
 Siapa tak jatuh hati dengan gadis macam begitu, yang bahkan Tuhan dengan segala kemahakuasaannya itu hanya mampu “menciptakannya sekali saja dan pada tubuh yang seorang ini saja”.
 
 Lalu dari mata Bunda, Annelies hidup, atau dihidupkan oleh Pramoedya, sebagai keindahan yang di zaman leluhur bisa menerbitkan perang Bharatayuda. Annelies yang pipi, bibir, kening, hidung dan kupingnya seolah dicipta dari lilin tuangan yang dibentuk sesuai impian manusia.

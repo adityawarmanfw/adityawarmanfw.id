@@ -213,7 +213,7 @@ PERCAKAPAN BERHENTI. Keduanya melihat jendela. Gerimis sudah dari tadi berhenti.
 “Meramu biji?”
 
 “Selangkangan lagi kau ini.”
-![](__GHOST_URL__/content/images/max/800/1-Vvuu5FcDJoXJODYYIQBmZA.jpeg)Evolusi
+
 Nyali tersenyum saja. Lalu berusaha menjawab pertanyaan soal lukisan, “Aku tak begitu paham soal lukisan. Tapi kata kawanku, kalau kau melihat lukisan abstrak, coba saja bayangkan bagaimana proses pelukisannya. Bagaimana pelukis yang entah siapa itu memegang kuas di tangan kanannya, diam sejenak di depan kanvas, memejamkan mata, mencolek cat dari palet, diam lagi, lalu memberikan goresan pertama. Perhatikan arah kuasnya. Bisa juga kau bayangkan, di tengah proses itu, sang pelukis diam lagi, mencopot kaus atau mengikat rambut atau menyeruput kopi atau menyalakan rokok atau pergi ke kamar mandi untuk berak dan inspirasi. Bayangkan keringat yang muncul di pelipis dan jidatnya, jatuh perlahan sedikit bergetar seperti kuasnya yang menyapu kanvas lalu — ”
 
 Sarah diam. Ia memandangi lukisan itu, membayangkan bagaimana pelukis memulainya kemudian memejamkan mata. Mungkin untuk menambah konsentrasi atau agar lebih mudah membayangkan. Nyali berhenti membual dan memandanginya sambil terus menghisap rokoknya. Mungkin takjub karena perempuan itu percaya. Jika saja di dalam kafe ini tumbuh pohon Bodhi, maka miriplah Nyali seperti Sidharta yang habis semadi sendirian lalu mencerahkan murid pertamanya.
@@ -259,4 +259,3 @@ Sarah menunggu jawaban.
 “Hahaha. Bukan. Ini romantik revolusioner namanya!”
 
 Setelah gerimis di kafe di Braga di kota yang menyedihkan itu, membran pengeras suara masih bergetar mengembuskan suara. Lagu terus berganti dan berputar. Kali ini ia memutar lagu seorang penyanyi laki-laki bersuara serak yang berjudul entah apa.
-![](__GHOST_URL__/content/images/max/800/1-y3QZL8qwN8EbV_RBEmbuhQ.jpeg)

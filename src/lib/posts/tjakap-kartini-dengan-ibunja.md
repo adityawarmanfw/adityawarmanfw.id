@@ -49,9 +49,9 @@ Hiruk-pikuk di media sosial itu tak sepenuhnya membosankan sebenarnya. Ada beber
 Ada cerita ketika Pramoedya Ananta Toer mewacanakan untuk membuat monumen Multatuli di tempat di mana ia pernah menorehkan sejarah. Ia meminta itu pada PJM Soekarno. “Kenapa bukan Sneevliet?” tanya Bung Besar. Pada akhirnya, yang terlaksana justru jauh dari nama² itu. Yang dibuat oleh Bung Besar justru adalah patung Kartini bercawet. Kartini yang berkutang, Kartini yang mengenakan BH. Padahal entah di zaman itu apa benar sudah ada teknologi BH atau belum. Saya tak tau pasti.
 
 Yang menarik selanjutnya adalah [foto yang diunggah teman di Facebook](https://www.facebook.com/photo.php?fbid=10208788404923885&amp;set=a.10207890558958297.1073741842.1125866247&amp;type=3).
-![](__GHOST_URL__/content/images/max/800/1-UpDfpKWmKfdeillysTY4dQ.jpeg)Kartini dan Suaminya (KITLV)
+
 Foto dari KITLV itu menampilkan Kartini dan suaminya. Bukan, bukan wajah Kartini yang kuyu, bukan juga tangan Ibu kita yang takut² karena diapit tangan kokoh suaminya itu yang mesti diperhatikan. Sambil mengunggah foto ini, teman saya itu bertanya, *”Tangan siapakah di bawah tangan kiri Bupati Rembang itu???”*
-![](__GHOST_URL__/content/images/max/800/1-PDpWKQroKhPoaz3x8Zxzqw.jpeg)Tangan
+
 Ya, tak salah lagi. Pemilik tangan itu adalah manusia yang harus, kata Pram, “*beringsut seperti keong dan menyembah seorang raja kecil yang barangkali buta huruf pula!*”
 
 > ***— God, God! Sambar gledek!***

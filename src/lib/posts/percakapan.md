@@ -27,4 +27,4 @@ LALU AKU pergi menjauh. Bingung sekali. Aku pergi. Ke tempat yang sepi. Hatiku b
 Di tempat itu, aku bertanya pada Tuhan:
 
 “Tuhan, Kau Maha Baik. Tapi manusia-manusiamu tidak. Aku tak tahan lagi dengan dunia macam begini. Dan lagi, siapa lagi sebenarnya yang mesti kita tunggu? Jika memang tak ada, Tuhanku yang Maha Baik, pergunakanlah aku. Bila tak ada lagi yang Kau utus untuk turun ke dunia, maka pergunakanlah aku!”
-![](__GHOST_URL__/content/images/max/800/1-LgFBTXZZa4ZAbUmYAZZ4AQ.jpeg)
+

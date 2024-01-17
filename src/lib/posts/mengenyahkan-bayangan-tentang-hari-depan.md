@@ -45,7 +45,7 @@ HUJAN TURUN DERAS. Lampu-lampu mobil yang berpapasan dengan bis yang kutumpangi 
 Gadis yang memerankan Hermione itu makin dewasa sebagaimana aku. Sebulan lalu, aku menonton filmnya yang baru yang berjudul Colonia.
 
 Latar ceritanya berlangsung di Chile tahun 1973.
-![](__GHOST_URL__/content/images/max/800/0-dxWCR6UXHlpCLBdl.jpeg)Photo by [Jezael Melgoza](https://unsplash.com/@jezael?utm_source=medium&amp;utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&amp;utm_medium=referral)
+
 Hermione memerankan seorang pramugari bernama Lena. Kekasih Lena adalah seorang propagandis dalam organisasi yang mendukung Allende. Mahasiswa asal Jerman, bernama Daniel, yang entah bagaimana bisa sampai ke Chile.
 
 Kisah percintaan mereka lancar. Bersama ke acara-acara kampanye partai. Berdansa juga meminum bir di kafe. Entah bagaimana juga, Daniel punya sebuah apartemen yang besar. Aktivis, apalagi marxis, biasanya susah barang sekadar mengisi perut. Mungkin dia tidak berasal dari keluarga proletar, atau setidaknya, ia lahir dari keluarga mampu, dan dihabiskannya uang dari keluarganya untuk aktivitas politiknya itu.

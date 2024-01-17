@@ -10,7 +10,6 @@ tags:
 excerpt: Catatan perjalanan ke Gunung Butak
 ---
 
-![](__GHOST_URL__/content/images/max/800/1-OQacRtEGIaD_niZ80jYcag.jpeg)Lull
 #### Catatan perjalanan ke Gunung Butak
 
 PERJALANAN INI saya lakukan bersama teman-teman di awal September 2013, ke Gunung Butak, Jawa Timur.

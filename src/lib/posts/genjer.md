@@ -37,8 +37,8 @@ Juga dari cerita Mak’e kemudian aku tahu, keluarganya termasuk keluarga-keluar
 “*Biyen aku diseneni Mbah Kung melu nyanyi genjer,*” katanya.
 
 Mak’e bercerita ia ditegur oleh Mbah Kung karena ikut melagukan genjer-genjer.
-![](__GHOST_URL__/content/images/max/800/1-UV_Q3wBZauwdbTBg518ckg.jpeg)Mass Graves, Misbach Thamrin
-A**ku membayangkan Mak’e,** ketika ia masih segar sekitar tahun 1965 silam. Pagi hari di depan rumah, dengan rambut digelung, mengenakan kain jarit, kemben, serta stagen yang melilit perutnya. Ia sedang menyapu halaman depan rumah yang cukup luas. Jalanan masih berbatu. Matahari masih samar, embun masih bersisa. Dari timur, serombongan orang, mungkin dua puluh, laki-laki dan perempuan, melintas depan rumah. Menyanyikan lagu genjer. Mengingatkan bahaya setan desa.
+
+**Aku membayangkan Mak’e,** ketika ia masih segar sekitar tahun 1965 silam. Pagi hari di depan rumah, dengan rambut digelung, mengenakan kain jarit, kemben, serta stagen yang melilit perutnya. Ia sedang menyapu halaman depan rumah yang cukup luas. Jalanan masih berbatu. Matahari masih samar, embun masih bersisa. Dari timur, serombongan orang, mungkin dua puluh, laki-laki dan perempuan, melintas depan rumah. Menyanyikan lagu genjer. Mengingatkan bahaya setan desa.
 
 “Banyak orang naik sepeda rombongan. Nyanyi genjer-genjer,” ceritanya ke Mbah Kung dalam Jawa.
 
@@ -67,7 +67,7 @@ Entah berapa yang tiba-tiba menjadi halal darahnya. Ada yang mencatat, pada hari
 Masih terhitung satu kecamatan dengan rumah ini, di kawasan pelacuran, satu kilometer sebelah utara Pabrik Gula Ngadirejo, yang terjadi begitu mengerikan: di depan rumah-rumah banyak bergantungan kemaluan para perempuan Komunis — seperti gantungan pisang-pisang yang dijual. Cerita di Pare pun tak kalah mengerikan. Seorang suami dipenggal kepalanya dan istrinya yang sedang hamil dibelah perutnya dan dicincang janinnya. Tak terbayang menjadi perempuan komunis dan dituduh komunis saat itu. Diminta membuka jarit, memperlihatkan pahanya bagian dalam, apakah ada lambang palu arit atau tidak. Jika ada, ditelanjangi, dipaksa melakukan tarian harum bunga, diperkosa lalu mati. Jika tak ada, disiksa, dipaksa mengaku, ditelanjangi, dipaksa melakukan tarian harum bunga, diperkosa, lalu mati. Tentu juga tak pernah ada yang berlambang palu arit pahanya!
 
 Kekejian itu, direncanakan dan dilakukan oleh orang-orang beriman dan beragama. Bahkan oleh mereka yang tinggi ilmu agamanya.
-![](__GHOST_URL__/content/images/max/800/1-A2B3hvO6Zpwb-QzV1deHMQ.jpeg)Misbach Thamrin
+
 “Komunis itu orang-orang macam apa sebenarnya. Mereka pakai pakaian dan ikat kepala hitam-hitam. Mencari-cari orang. Oleh Kung-mu aku disuruh diam di rumah,” kata Mak’e.
 
 “Siapa yang dicari?” tanyaku.

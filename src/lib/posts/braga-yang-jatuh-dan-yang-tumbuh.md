@@ -35,7 +35,7 @@ Jalanan basah yang sesekali diliriknya itu, yang memantulkan caya lampu, yang me
 Ia tahu itu. Ia tahu betul bahwa pergi ke Braga saat langit mendung untuk memohon suatu pencerahan pada botol-botol hijau yang sekarang ada di depannya ini justru akan memperparah keadaan. Ia tahu itu, tapi ia tetap pergi.
 
 Kafe itu bertempat di bangunan tua warisan Hindia-Belanda. Temboknya berupa susunan batu bata besar-besar yang sengaja tak dilapisi dengan semen dan hanya ditutup dengan cat warna putih. Dulunya, tempat ini adalah sebuah restoran Hong Kong. Restoran masakan Cina. Di sebelah bangunan itu, pernah berdiri toko Populair, yang menjual gramofon, piringan hitam, foto, dan artikel-artikel radio. Kafe itu berada di seberang Gang Coorde, yang sekarang berubah nama menjadi Jalan Kejaksaan.
-![](__GHOST_URL__/content/images/max/800/1-d_NjjTa5fLB3xnPPGcTLCw.jpeg)Old Braga
+
 #### “Jangan pergi ke Bandung jika kalian meninggalkan istri kalian di rumah.”
 
 Pemuda itu tersenyum. Kecut. Ia ingat kalimat itu, di sebuah buku lama yang pernah dibacanya. Berkah *cultuurstelsel *sebagai kelanjutan *preanger stelsel, *selain melahirkan Max Havelaar di Banten, tak lain adalah munculnya Mojang Priangan — perempuan di Bandung pada masa itu yang digambarkan berkulit putih dan berhidung mancung, para Indo, dengan kecantikan *kreol* seperti Annelies dalam Bumi Manusia, novel karangan Pramoedya yang menjadi buku kesukaan pemuda itu.
