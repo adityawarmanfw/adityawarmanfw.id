@@ -4,7 +4,7 @@ date: '2022-05-14'
 updated: '2022-05-14'
 isPublished: true
 tags:
-  - blog
+  - analitika
 excerpt: Visualisasi ritme kalimat dari 1.252 cerpen Indonesia. Bagaimana cerpenis Indonesia menyelang-nyeling panjang kalimat mereka?
 ---
 

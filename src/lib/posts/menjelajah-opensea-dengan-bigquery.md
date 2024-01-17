@@ -4,7 +4,7 @@ date: '2022-03-02'
 updated: '2022-05-05'
 isPublished: true
 tags:
-  - blog
+  - analitika
 excerpt: Belajar analitika blockchain dari riwayat transaksi Ghozali Everyday.
 ---
 

@@ -5,15 +5,18 @@ export const siteURL = 'adityawarmanfw.id';
 export const siteLink = 'https://adityawarmanfw.id';
 export const siteAuthor = '- adityawarmanfw';
 
-// Edit this to alter the main nav menu. (Also used by the footer and mobile nav.)
 export const navItems = [
 	{
-		title: 'BLOG',
-		route: '/tag/blog/'
+		title: 'ANALITIKA',
+		route: '/tag/analitika/'
 	},
 	{
 		title: 'MIKROBLOG',
 		route: '/tag/mikroblog/'
+	},
+	{
+		title: 'SELAIN DATA',
+		route: '/tag/selain-data/'
 	},
 	{
 		title: 'RSS',

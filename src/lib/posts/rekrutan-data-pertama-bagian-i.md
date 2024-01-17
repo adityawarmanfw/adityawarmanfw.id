@@ -4,7 +4,7 @@ date: '2022-08-14'
 updated: '2022-08-15'
 isPublished: true
 tags:
-  - blog
+  - analitika
 excerpt: Bagian pertama dari dua tulisan. Bagian ini membahas perkara teknis ketika bekerja sebagai rekrutan data pertama.
 ---
 

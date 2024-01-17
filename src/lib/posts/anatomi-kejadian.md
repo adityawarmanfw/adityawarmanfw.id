@@ -4,7 +4,7 @@ date: '2023-07-27'
 updated: '2023-08-01'
 isPublished: true
 tags:
-  - blog
+  - analitika
 excerpt: Bagaimana saya biasanya menyusun perencanaan Pelacak Kejadian di produk digital. Ilmu dan amalnya.
 ---
 
