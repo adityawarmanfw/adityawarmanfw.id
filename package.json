@@ -11,7 +11,7 @@
 	"devDependencies": {
 		"@codemirror/lang-json": "^6.0.1",
 		"@codemirror/lang-sql": "^6.5.4",
-		"@duckdb/duckdb-wasm": "^1.28.0",
+		"@duckdb/duckdb-wasm": "https://storage.sekuel.com/duckdb-duckdb-wasm-1.28.1-dev91.0.tgz",
 		"@observablehq/plot": "^0.6.13",
 		"@popperjs/core": "^2.11.8",
 		"@sveltejs/adapter-static": "^2.0.3",

@@ -1,15 +1,22 @@
 import * as duckdb from '@duckdb/duckdb-wasm';
-import duckdb_wasm from '/node_modules/@duckdb/duckdb-wasm/dist/duckdb-eh.wasm?url';
-import duckdb_worker from '/node_modules/@duckdb/duckdb-wasm/dist/duckdb-browser-eh.worker.js?worker';
 
 const initDB = async () => {
+	const JSDELIVR_BUNDLES = duckdb.getJsDelivrBundles();
 
+	// Select a bundle based on browser checks
+	const bundle = await duckdb.selectBundle(JSDELIVR_BUNDLES);
+
+	const worker_url = URL.createObjectURL(
+		new Blob([`importScripts("${bundle.mainWorker}");`], { type: 'text/javascript' })
+	);
+
+	// Instantiate the asynchronus version of DuckDB-wasm
+	const worker = new Worker(worker_url);
 	const logger = new duckdb.ConsoleLogger();
-	const worker = new duckdb_worker();
-
-	let db = new duckdb.AsyncDuckDB(logger, worker);
-	await db.instantiate(duckdb_wasm);
+	const db = new duckdb.AsyncDuckDB(logger, worker);
+	await db.instantiate(bundle.mainModule, bundle.pthreadWorker);
+	URL.revokeObjectURL(worker_url);
 	return db;
 };
 
-export { initDB, duckdb};
+export { initDB, duckdb };
