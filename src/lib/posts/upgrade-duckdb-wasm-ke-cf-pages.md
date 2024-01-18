@@ -5,7 +5,7 @@ updated: 2024-01-18
 isPublished: true
 tags: 
     - mikroblog
-excerpt: Mengatasi Ukuran File Melebihi Batas
+excerpt: Mengatasi ukuran file melebihi batas
 ---
 
 Sore ini, pustaka [@duckdb/duckdb-wasm](https://www.npmjs.com/package/@duckdb/duckdb-wasm) diperbarui. Versi anyar ini sudah lama saya tunggu-tunggu karena memungkinkan penggunaan [ekstensi duckdb](https://duckdb.org/docs/extensions/overview) penting seperti [JSON](https://duckdb.org/docs/extensions/json.html) dan [spatial](https://duckdb.org/docs/extensions/spatial).
