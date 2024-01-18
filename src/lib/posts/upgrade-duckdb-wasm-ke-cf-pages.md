@@ -37,7 +37,13 @@ Yang ternyata tak diperbolehkan:
 Saya utak-atik file `+page.svelte`, mencoba cara di [REPL](https://svelte.dev/repl/7a7de2ad8f9648bd8ff10929156334c5?version=4.2.9) ini, juga tak berhasil.
 
 Akhirnya, saya ke [GH Actions duckdb-wasm](https://github.com/duckdb/duckdb-wasm/actions/workflows/main.yml), lalu mengunduh berkas `duckdb-wasm-packages` dari artefak.
-Buka direktori `duckdb-wasm`, hapus semua file `.wasm` yang berukuran besar, lalu `npm pack`. Unggah pustaka ke Cloudflare R2, lalu instal. Coba jalankan di lokal, berhasil. Deploy, sukses!
+Buka direktori `duckdb-wasm`, hapus semua file `.wasm` yang berukuran besar, lalu `npm pack`. Unggah pustaka ke Cloudflare R2, lalu instal. 
+
+```
+"@duckdb/duckdb-wasm": "https://storage.sekuel.com/duckdb-duckdb-wasm-1.28.1-dev91.0.tgz",
+```
+
+Coba jalankan di lokal, berhasil. *Deploy* ulang ke CF Pages, sukses!
 
 Begini isi file `duckdb.js` yang saya pakai untuk inisiasi DuckDB-WASM:
 
