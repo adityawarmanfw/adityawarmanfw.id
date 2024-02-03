@@ -28,7 +28,7 @@
 	}
 
 	async function execute(query) {
-		status = 'Executing query...';
+		status = 'Mengeksekusi kueri...';
 		const conn = await connProm;
 		const urlPattern = /(https?:\/\/[^\s\/$.?#].[^\s]*\.json)/i;
 		const match = query.match(urlPattern);
@@ -48,7 +48,7 @@
 					registeredJsonUrls.push(url);
 				} catch (error) {
 					results = new Promise((resolve, reject) => reject(error));
-					status = 'Error';
+					status = 'Galat';
 				}
 			}
 		}
@@ -77,7 +77,7 @@
 			if (results) {
 				let endTime = Date.now();
 				let executionTime = endTime - startTime;
-				status = `Query executed in ${executionTime} ms`;
+				status = `Kueri selesai dieksekusi dalam ${executionTime} milidetik.`;
 			} else {
 				status = '';
 			}
@@ -118,7 +118,7 @@
 			overflow: 'auto'
 		},
 		'.cm-content, .cm-gutter': {
-			minHeight: '20rem',
+			minHeight: '2rem',
 			fontFamily: 'Iosevka Term SS08 Web',
 			fontSize: '0.95em'
 		}
@@ -141,13 +141,13 @@
 	</div>
 	<div class="my-4">
 		<button
-			on:release={() => {
+			on:click={() => {
 				execute(value);
 			}}
 			title="Execute Query"
 			style=""
 		>
-			Execute
+			Eksekusi
 		</button>
 		<span class="my-2">{status}</span>
 	</div>
