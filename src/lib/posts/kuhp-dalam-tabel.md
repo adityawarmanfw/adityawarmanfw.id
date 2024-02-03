@@ -547,7 +547,7 @@ Saya sudah mencoba menghubungi beberapa nama yang disebut di atas lewat LinkedIn
 
 ### Kontribusi
 
-Hasil dan dokumentasi kerja pengubahan dokumen KUHP ke dalam tabel ini saya unggah di repositori Github KUHP 2023: https://github.com/adityawarmanfw/KUHP2023.
+Hasil dan dokumentasi kerja pengubahan dokumen KUHP ke dalam tabel ini saya unggah di [repositori Github KUHP 2023](https://github.com/adityawarmanfw/KUHP2023).
 
 Silakan jika ada dari pembaca yang ingin berkontribusi, apa pun bentuknya.
 
