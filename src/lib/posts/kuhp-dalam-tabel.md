@@ -7,7 +7,7 @@ tags:
   - blog
   - analitika
   - sql
-excerpt: "KUHP lama yang bersumber dari hukum kolonial berlaku sejak 1918. Meski begitu, sistem temu kembali dan pemetaan rujukan di KUHP lama baru ada 101 tahun kemudian. Saya berupaya untuk cepat-cepat mengubah KUHP baru ke format yang lebih mudah diakses sebelum UU mulai diberlakukan."
+excerpt: "KUHP lama yang bersumber dari hukum kolonial berlaku sejak 1918. Meski begitu, sistem temu kembali dan pemetaan rujukan di KUHP baru ada 101 tahun kemudian. Saya berupaya untuk cepat-cepat mengubah KUHP 2023 ke format yang lebih mudah diakses sebelum UU itu mulai diberlakukan."
 ---
 
 <script>
