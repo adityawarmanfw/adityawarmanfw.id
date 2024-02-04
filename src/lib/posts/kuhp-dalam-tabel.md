@@ -260,15 +260,15 @@ Membaca dokumen hukum secara langsung dalam PDF tanpa lewat situs perantara memb
 
 Memeriksa struktur dokumen pun tak gampang. Dalam undang-undang, selain pasal, juga ada ayat, huruf, angka, paragraf, bab, buku. Pertanyaan-pertanyaan sederhana seperti "Ada berapa pasal dalam buku kesatu?", "Ada berapa pasal yang memiliki huruf dan angka?", atau "Dari pasal berapa sampai pasal berapa bab yang membahas tentang penyelundupan manusia?" tak bisa dijawab dengan cepat. Lagi-lagi perlu bolak-balik menggulir layar.
 
-Format penyimpanan dokumen hukum dalam bentuk [Portable Document Format (PDF)](https://id.wikipedia.org/wiki/Portable_Document_Format) tak membantu banyak. Saya menghabiskan dua jam mencari dokumen undang-undang dalam format lain. Hasilnya nihil. Jaringan Dokumentasi dan Informasi Hukum Nasional ([JDIHN](https://jdihn.go.id/pencarian/detail/1563588/undang-undang-nomor-1-tahun-2023-tentang-kitab-undang-undang-hukum-pidana)) hanya menyediakan PDF.
-
-Pencarian kata tidak akurat jika dokumen PDF tidak dibikin dengan baik. Sebagai contoh,  lakukan pencarian kata dengan cara terbalik. Mencari "s6lagaimana" di dokumen [Undang-Undang KUHP baru](https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023) akan menemukan kata "sebagaimana". Mencari "orurng" akan menemukan "orang". PDF Undang-Undang KUHP yang ditulis ulang dan ditayangkan di situs [hukumonline.com](https://www.hukumonline.com/pusatdata/detail/lt63b3943c53853/undang-undang-nomor-1-tahun-2023) jelas dibikin dengan lebih baik. Pencarian kata "sebagaimana" memberikan hasil 573 kata, sedangkan di PDF versi pemerintah hanya 554 kata.
+Format penyimpanan dokumen hukum dalam bentuk [Portable Document Format (PDF)](https://id.wikipedia.org/wiki/Portable_Document_Format) tak membantu banyak. Pencarian kata tidak akurat jika dokumen PDF tidak dibikin dengan baik. Sebagai contoh,  lakukan pencarian kata dengan cara terbalik. Mencari "s6lagaimana" di dokumen [Undang-Undang KUHP baru](https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023) akan menemukan kata "sebagaimana". Mencari "orurng" akan menemukan "orang". PDF Undang-Undang KUHP yang ditulis ulang dan ditayangkan di situs [hukumonline.com](https://www.hukumonline.com/pusatdata/detail/lt63b3943c53853/undang-undang-nomor-1-tahun-2023) jelas dibikin dengan lebih baik. Pencarian kata "sebagaimana" memberikan hasil 573 kata, sedangkan di PDF versi pemerintah hanya 554 kata.
 
 Lalu mengapa pemerintah hanya menyediakan format PDF? Mengapa menyimpan dalam PDF? Ada beberapa kemungkinan alasan. Tata letak yang ajek, fon yang tetap, mudah untuk dicetak, ... ya, saya kira itu saja. Tak ada nomor halaman, sehingga tak bisa juga dipakai untuk mempermudah pencarian jika pun dicetak (bandingkan dengan versi hukumonline.com). Keburukan lain adalah dokumen PDF Undang-Undang dari pemerintah juga tidak punya daftar isi interaktif (bisa diklik).
 
 Ada beberapa alternatif untuk menyimpan dan meyebarkan dokumen hukum. Teks polos atau [laman HTML tanpa kosmetik](https://www.marxists.org/reference/archive/stalin/works/decades-index.htm), misalnya. [Pemerintah Amerika Serikat](https://uscode.house.gov/download/download.shtml) menyediakan dokumen dalam format selain PDF. Ada Extensible Markup Language ([XML](https://en.wikipedia.org/wiki/XML)) dan Extensible HyperText Markup Language ([XHTML](https://en.wikipedia.org/wiki/XHTML)).
 
-Di Indonesia, upaya pengubahan Undang-Undang ke format lain sudah dilakukan. Saya menemukan sebuah skripsi yang ditulis Siti Mawadah di tahun 2006 yang bisa dibaca juga sebagai proposal ["Pengembangan standar dokumen legal Indonesia berbasis XML"](https://lib.ui.ac.id/detail?id=124826&lokasi=lokal). Siti berfokus pada dokumen Undang-Undang. Pasca skripsi itu, ada upaya-upaya lain. Susy Violina di tahun 2009 membuat skripsi yang memiliki cakupan lebih luas dengan juga [memakai studi kasus UU Perubahan](https://lib.ui.ac.id/detail?id=123118&lokasi=lokal#). Mulyandra Pratama di tahun yang sama memakai studi kasus Peraturan Pemerintah (PP). Upaya-upaya itu lahir di Universitas Indonesia. Mereka telah mengkonversi ratusan dokumen legal ke format yang lebih mudah diakses. Bahkan Yans Sukma Pratama  membuat sistem perolehan informasi yang [menggunakan dokumen hukum yang terbit dari tahun 1983 sampai 2009](https://lib.ui.ac.id/detail?id=122890&lokasi=lokal#).
+Saya menghabiskan dua jam mencari dokumen undang-undang dalam format lain. Hasilnya nihil. Jaringan Dokumentasi dan Informasi Hukum Nasional ([JDIHN](https://jdihn.go.id/pencarian/detail/1563588/undang-undang-nomor-1-tahun-2023-tentang-kitab-undang-undang-hukum-pidana)) hanya menyediakan PDF.
+
+Saya hanya berhasil tahu bahwa upaya pengubahan Undang-Undang ke format lain sudah dilakukan. Saya menemukan sebuah skripsi yang ditulis Siti Mawadah di tahun 2006 yang bisa dibaca juga sebagai proposal ["Pengembangan standar dokumen legal Indonesia berbasis XML"](https://lib.ui.ac.id/detail?id=124826&lokasi=lokal). Siti berfokus pada dokumen Undang-Undang. Pasca skripsi itu, ada upaya-upaya lain. Susy Violina di tahun 2009 membuat skripsi yang memiliki cakupan lebih luas dengan juga [memakai studi kasus UU Perubahan](https://lib.ui.ac.id/detail?id=123118&lokasi=lokal#). Mulyandra Pratama di tahun yang sama memakai studi kasus Peraturan Pemerintah (PP). Upaya-upaya itu lahir di Universitas Indonesia. Mereka telah mengkonversi ratusan dokumen legal ke format yang lebih mudah diakses. Bahkan Yans Sukma Pratama  membuat sistem perolehan informasi yang [menggunakan dokumen hukum yang terbit dari tahun 1983 sampai 2009](https://lib.ui.ac.id/detail?id=122890&lokasi=lokal#).
 
 Termutakhir yang bisa saya temukan, tahun 2019 Roha‘di Oloan Tampubolon dari Universitas YARSI membuat skripsi tentang [visualisasi informasi hukum pidana umum](https://digilib.yarsi.ac.id/4858/) (KUHP lama), yang kemudian [terbit dalam bentuk jurnal di IEEE](https://ieeexplore.ieee.org/document/9288591) dengan tajuk "PenalViz: A Web-Based Visualization Tool for the Indonesian Penal Code".
 
@@ -280,11 +280,11 @@ Tanggal 20 Desember 2022, [saya bilang di Twitter](https://twitter.com/adityawar
 
 ## Pada mulanya adalah tabel
 
-Meminjam kata-kata Sapardi, "Yang fana adalah PDF. Tabel abadi."
+Meminjam puisi Sapardi, "Yang fana adalah PDF. Tabel abadi."
 
 Umat manusia [akrab dengan tabel sejak 3000 SM](https://en.wikipedia.org/wiki/Proto-cuneiform#Corpus). Jika dibandingkan dengan XML, bentuk tabel akan lebih mudah diakses, terutama karena bisa [dikueri dengan SQL](https://sekuel.com/sql-courses/) secara alami. Selain itu, ukuran dokumen juga bisa jadi lebih kecil.
 
-Bagaimana membuat struktur tabel yang cocok dalam hal ini?
+Bagaimana membuat struktur tabel yang cocok untuk menyimpan data UU ini?
 
 Berdasarkan UU No. 12 TAHUN 2011 tentang Pembentukan Peraturan Perundang-undangan, kerangka UU adalah judul, pembukaan, batang tubuh, penutup, penjelasan, dan lampiran. Dua yang terakhir hanya ada jika diperlukan.
 
@@ -328,7 +328,7 @@ Pasal 9
                     3) … . 
 ```
 
-Sehingga jika diubah ke dalam format tabel akan menjadi seperti ini:
+Aturan ini yang dipakai dalam UU KUHP. Jika diubah ke format tabel, akan menjadi seperti ini:
 
 ```
 t_buku
@@ -357,9 +357,9 @@ t_pasal
 |-------|------|-------|-------|---------------|--------------|---------------|------|
 ```
 
-Sampai tulisan ini dibuat, saya telah [mengubah KUHP baru Buku Kesatu ke dalam bentuk tabel](https://github.com/adityawarmanfw/KUHP2023/tree/main). Di buku kesatu ini, Pasal paling rinci hanya diturunkan sampai angka (lihat tabel `t_pasal`). Contoh tabel di atas mengikuti struktur batang tubuh KUHP 2023 Buku Kesatu.
+Sampai tulisan ini dibuat, saya telah [mengubah KUHP baru Buku Kesatu ke dalam bentuk tabel](https://github.com/adityawarmanfw/KUHP2023/tree/main). Di Buku Kesatu KUHP, Pasal paling rinci hanya diturunkan sampai angka (lihat tabel `t_pasal`). Contoh tabel di atas mengikuti struktur batang tubuh KUHP 2023 Buku Kesatu.
 
-Silakan jalankan kueri SQL di bawah ini dengan klik tombol `Eksekusi`. Kueri ini akan [mengambil data dari repositori GitHub KUHP2023](https://github.com/adityawarmanfw/KUHP2023/tree/main) dan memuatnya ke dalam tabel di sistem basis data DuckDB secara transien.
+Silakan jalankan kueri SQL di bawah ini dengan klik tombol `Eksekusi`. Kueri ini akan [mengambil data dari repositori GitHub KUHP2023](https://github.com/adityawarmanfw/KUHP2023/tree/main) dan memuatnya ke dalam tabel di sistem basis data [DuckDB](https://duckdb.org) secara transien.
 
 <DuckDBEditor bind:value={createTableStmt} bind:connProm bind:dbInit />
 
@@ -485,7 +485,7 @@ Bayangkan jika ingin mencari gabungan tiga kata atau lebih dengan regex.
 
 Beruntungnya, ada cara yang lebih anggun.
 
-Di RDBMS mumpuni seperti SQLite, PostgreSQL, dan DuckDB ada [Full](https://www.postgresql.org/docs/current/textsearch-intro.html) [Text](https://www.sqlite.org/fts5.html) [Search](https://duckdb.org/docs/extensions/full_text_search.html) (FTS) yang memungkinkan pencarian teks dengan bahasa alami. Mirip mesin pencari.
+Di sistem basis data relasional (RDBMS) mumpuni seperti SQLite, PostgreSQL, dan DuckDB ada [Full](https://www.postgresql.org/docs/current/textsearch-intro.html) [Text](https://www.sqlite.org/fts5.html) [Search](https://duckdb.org/docs/extensions/full_text_search.html) (FTS) yang memungkinkan pencarian teks dengan bahasa alami. Mirip mesin pencari.
 
 <DuckDBEditor value={ftsText} bind:connProm bind:dbInit />
 
