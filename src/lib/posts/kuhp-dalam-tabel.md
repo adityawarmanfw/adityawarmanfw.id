@@ -24,7 +24,7 @@ CREATE OR REPLACE TABLE t_buku AS (
     SELECT
         buku::int32 AS buku,
         teks::varchar AS teks
-    FROM read_csv_auto('https://raw.githubusercontent.com/adityawarmanfw/KUHP2023/main/tsvs/buku.tsv', sep='\t')
+    FROM read_csv_auto('https://raw.githubusercontent.com/adityawarmanfw/KUHP2023/main/tsvs/buku.tsv', sep='\\t')
 );
 
 CREATE OR REPLACE TABLE t_bab AS (
@@ -35,7 +35,7 @@ CREATE OR REPLACE TABLE t_bab AS (
         pasal_awal::int32 AS pasal_awal,
         pasal_akhir::int32 AS pasal_akhir,
         teks::varchar AS teks,
-    FROM read_csv_auto('https://raw.githubusercontent.com/adityawarmanfw/KUHP2023/main/tsvs/bab.tsv', sep='\t')
+    FROM read_csv_auto('https://raw.githubusercontent.com/adityawarmanfw/KUHP2023/main/tsvs/bab.tsv', sep='\\t')
 );
 
 CREATE OR REPLACE TABLE t_bagian AS (
@@ -45,7 +45,7 @@ CREATE OR REPLACE TABLE t_bagian AS (
         pasal_awal::int32 AS pasal_awal,
         pasal_akhir::int32 AS pasal_akhir,
         teks::varchar AS teks,
-    FROM read_csv_auto('https://raw.githubusercontent.com/adityawarmanfw/KUHP2023/main/tsvs/bagian.tsv', sep='\t')
+    FROM read_csv_auto('https://raw.githubusercontent.com/adityawarmanfw/KUHP2023/main/tsvs/bagian.tsv', sep='\\t')
 );
 
 CREATE OR REPLACE TABLE t_paragraf AS (
@@ -70,7 +70,7 @@ CREATE OR REPLACE TABLE t_pasal AS (
         list_transform(string_split(ayat_rujukan::varchar, ','), x -> if(x = '', null, x))::int32 [] AS ayat_rujukan,
         list_transform(string_split(huruf_rujukan::varchar, ','), x -> coalesce(x, ''))::varchar [] AS huruf_rujukan,
         teks::varchar AS teks
-    FROM read_csv_auto('https://raw.githubusercontent.com/adityawarmanfw/KUHP2023/main/tsvs/pasal.tsv', sep='\t')
+    FROM read_csv_auto('https://raw.githubusercontent.com/adityawarmanfw/KUHP2023/main/tsvs/pasal.tsv', sep='\\t')
 );
 
 SHOW ALL TABLES;
