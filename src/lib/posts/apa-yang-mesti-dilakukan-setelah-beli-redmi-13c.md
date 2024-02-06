@@ -1,5 +1,5 @@
 ---
-title: 'Apa yang Harus Dilakukan Setelah Beli Redmi C13'
+title: 'Apa yang Harus Dilakukan Setelah Beli Redmi 13C'
 date: 2024-02-06
 updated: 2024-02-06
 isPublished: true
@@ -9,12 +9,12 @@ tags:
 excerpt: "Pengaturan supaya ponsel lebih gesit, tak banyak iklan, dan kamera lebih baik."
 ---
 
-Sekitar dua bulan lalu, layar ponsel lama saya tiba-tiba bergaris ungu. Seperti *lightsaber*. Minggu lalu muncul satu lagi garis. Saya terpaksa cari ponsel pengganti. Setelah nonton beberapa kanal youtube, saya memutuskan beli ponsel murah keluaran Xiaomi, Redmi C13. Harganya cuma 1,4 juta. *Entry level*. Bagusnya, sudah ada NFC yang kadang saya butuh untuk mengisi kartu tol.
+Sekitar dua bulan lalu, layar ponsel lama saya tiba-tiba bergaris ungu. Seperti *lightsaber*. Minggu lalu muncul satu lagi garis. Saya terpaksa cari ponsel pengganti. Setelah nonton beberapa kanal youtube, saya memutuskan beli ponsel murah keluaran Xiaomi, Redmi 13C. Harganya cuma 1,4 juta. *Entry level*. Bagusnya, sudah ada NFC yang kadang saya butuh untuk mengisi kartu tol.
 
 
 Sudah sekitar 4 tahun saya tidak pakai Redmi. Kembali ke Redmi bikin saya kaget. Iklan banyak sekali. Dulu, saya pakai ROM kustom buat mengatasi itu. Sekarang tampaknya susah karena saya juga perlu aplikasi perbankan yang kadang menolak ROM kustom.
 
-Catatan pendek ini berisi apa saja yang saya lakukan supaya C13 terasa jadi lebih baik.
+Catatan pendek ini berisi apa saja yang saya lakukan supaya Redmi 13C terasa jadi lebih baik.
 
 ## Mengurangi Iklan di Redmi C13 dan membuatnya lebih gesit
 
@@ -43,5 +43,5 @@ Berikut upaya-upaya yang saya lakukan:
 
 ## Kamera yang lebih baik
 
-Unduh GCam untuk Redmi C13 di [sini](https://www.celsoazevedo.com/files/android/google-camera/dev-bsg/f/dl88/). Matikan kamera 0,5 karena Redmi C13 tidak punya kapabilitas *ultra-wide*.
+Unduh GCam untuk Redmi 13C di [sini](https://www.celsoazevedo.com/files/android/google-camera/dev-bsg/f/dl88/). Matikan kamera 0,5 karena Redmi 13C tidak punya kapabilitas *ultra-wide*.
 
