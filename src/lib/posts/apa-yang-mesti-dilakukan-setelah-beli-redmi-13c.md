@@ -23,7 +23,7 @@ Saya belum yakin apakah iklan jadi hilang. Tapi yang jelas, jumlahnya jadi jauh 
 Berikut upaya-upaya yang saya lakukan:
     
     1. Ganti launcher. Pilihan saya jatuh ke [OLauncher](https://f-droid.org/en/packages/app.olauncher/). Simpel, ringan, *open-source*, tanpa iklan. Navigasi dengan keyboard.
-    2. Instal peramban [Iceraven](https://github.com/fork-maintainers/iceraven-browser), lalu pasang uBlock Origin. Peramban ini dikembangkan dari Mozilla Firefox. Performanya bagus dan dengan *add-ons* uBlock Origin, masuk ke situs-situs bisa tanpa iklan.
+    2. Instal peramban [Iceraven](https://github.com/fork-maintainers/iceraven-browser), lalu pasang uBlock Origin. Peramban ini dikembangkan dari Mozilla Firefox. Performanya bagus dan dengan *add-ons* uBlock Origin, masuk ke situs web bisa tanpa iklan.
     3. Keamanan -> Setelan -> Rekomendasi -> Terima rekomendasi -> matikan.
     4. Keamanan -> Pembersih -> Setelan -> Terima rekomendasi -> matikan.
     5. Unduhan -> Setelan -> Tampilkan konten rekomendasi -> matikan.
