@@ -16,7 +16,7 @@ Sudah sekitar 4 tahun saya tidak pakai Redmi. Kembali ke Redmi bikin saya kaget.
 
 Catatan pendek ini berisi apa saja yang saya lakukan supaya Redmi 13C terasa jadi lebih baik.
 
-## Mengurangi Iklan di Redmi C13 dan membuatnya lebih gesit
+## Mengurangi Iklan di Redmi 13C dan membuatnya lebih gesit
 
 Saya belum yakin apakah iklan jadi hilang. Tapi yang jelas, jumlahnya jadi jauh berkurang.
 
