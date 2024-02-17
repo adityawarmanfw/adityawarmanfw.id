@@ -2,6 +2,16 @@
 	import { CodeMirror, sql, DuckDBDialect } from '$lib/playground/codemirror';
 	import { TabulatorFull as Tabulator } from 'tabulator-tables';
 
+	function uint32ArrayToNumber(uint32Array, decimal) {
+    	// Combine all elements of the array into a single value
+		const combinedValue = uint32Array.reduce((acc, val, index) => {
+			return acc + val * Math.pow(2, 32 * index);
+		}, 0);
+
+		// Convert the combined value to a number with the specified decimal position
+		return combinedValue / Math.pow(10, decimal);
+	}
+
 	function transformRows(schema, rows) {
 		return rows.map((row) => {
 			const transformedRow = {};
@@ -19,6 +29,8 @@
 					transformedRow[columnName] = timestampDate.toISOString();
 				} else if (column.type === 'Interval') {
 					transformedRow[columnName] = new String(value);
+				} else if (column.type === 'Decimal') {
+					transformedRow[columnName] =  new String(uint32ArrayToNumber(value, column.type2.scale));
 				} else {
 					transformedRow[columnName] = value;
 				}
@@ -60,7 +72,8 @@
 			const schema = res.schema.fields.map((r) => ({
 				title: r.name,
 				field: r.name,
-				type: r.type.constructor[Symbol.toStringTag]
+				type: r.type.constructor[Symbol.toStringTag],
+				type2: r.type
 			}));
 
 			const transformedRows = transformRows(schema, rows);
@@ -126,23 +139,24 @@
 
 	let sqlConfig = { upperCaseKeywords: true, dialect: DuckDBDialect };
 
-	let value = '';
+	let value = ''
 	let status = '';
 	let connProm;
 	let dbInit;
 	let results = new Promise(() => ({}));
+	let renderedValue = value.split('\n').slice(1, -1).join('\n')
 
 	export { value, connProm, dbInit };
 </script>
 
 <div class="border border-primary-300 rounded-lg py-2 px-4 block my-4">
 	<div class="my-4">
-		<CodeMirror bind:value styles={cmStyle} lang={sql(sqlConfig)} />
+		<CodeMirror bind:value={renderedValue} styles={cmStyle} lang={sql(sqlConfig)} />
 	</div>
 	<div class="my-4">
 		<button
 			on:click={() => {
-				execute(value);
+				execute(renderedValue);
 			}}
 			title="Execute Query"
 			style=""
