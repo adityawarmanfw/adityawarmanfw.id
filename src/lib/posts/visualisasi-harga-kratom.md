@@ -15,7 +15,7 @@ excerpt: "Kratom (Mitragyna speciosa) belum termasuk dalam narkotika golongan 1 
     import data from '$lib/data/harga_kratom.json';
 </script>
 
-Sampai sekarang, orang-orang masih bisa jual-beli kratom secara bebas di lokapasar.
+Sampai sekarang, orang-orang masih bisa jual beli kratom secara bebas di lokapasar.
 
 Wakil Ketua Kamar Dagang dan Industri (Kadin) Kalimantan Barat bilang kalau [harga kratom turun di pasaran internasional](https://www.suarakalbar.co.id/2023/12/kadin-kalbar-dukung-untuk-perbaikan-tata-niaga-ekspor-kratom/).
 Dari 40 dolar AS menjadi 5-6 dolar AS per kilogram. Anjlok.
