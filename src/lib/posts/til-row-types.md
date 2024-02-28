@@ -29,15 +29,6 @@ t -> (1,     1)      ⎭
      (int,   int)  --> tipe field
 ```
 
-Nilai baris dianggap `NULL` jika dan hanya jika semua field berisi nilai `NULL`.
-
-
-```sql
-t -> (NULL,  NULL)`
-```
-
-Nilai barisnya adalah `NULL`.
-
 Di PostgreSQL, kueri:
 
 ```sql
@@ -58,6 +49,14 @@ FROM (VALUES (1,1),(NULL,1),(1,NULL),(NULL,NULL)) AS t(x, y);
 │ (,)   │   │   │ t         │ f             │ f             │
 └───────┴───┴───┴───────────┴───────────────┴──────────────*/
 ```
+
+Nilai baris dianggap `NULL` jika dan hanya jika semua field berisi nilai `NULL`.
+
+```sql
+t -> (NULL,  NULL)`
+```
+
+Nilai barisnya adalah `NULL`.
 
 Di DuckDB, kueri yang sama, rupanya punya hasil lain:
 
