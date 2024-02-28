@@ -53,7 +53,7 @@ FROM (VALUES (1,1),(NULL,1),(1,NULL),(NULL,NULL)) AS t(x, y);
 Nilai baris dianggap `NULL` jika dan hanya jika semua field berisi nilai `NULL`.
 
 ```sql
-t -> (NULL,  NULL)`
+t -> (NULL,  NULL)
 ```
 
 Nilai barisnya adalah `NULL`.
