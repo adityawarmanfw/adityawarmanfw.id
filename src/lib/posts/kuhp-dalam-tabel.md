@@ -83,12 +83,12 @@ SELECT
     (pasal_akhir - pasal_awal + 1) AS jumlah_pasal,
     teks,
     concat(bar(jumlah_pasal, 0, max_jumlah_pasal), ' ', round(jumlah_pasal / max_pasal, 3), '%') AS diagram_batang
-FROM 
-    t_bagian, 
+FROM
+    t_bagian,
     (
-        SELECT 
-            max((pasal_akhir - pasal_awal + 1)) AS max_jumlah_pasal, 
-            max(pasal_akhir) AS max_pasal 
+        SELECT
+            max((pasal_akhir - pasal_awal + 1)) AS max_jumlah_pasal,
+            max(pasal_akhir) AS max_pasal
         FROM t_bagian
     ) AS diagram
 ORDER BY pasal_awal;
@@ -96,7 +96,7 @@ ORDER BY pasal_awal;
 
     let penalTree = `
 WITH struktur AS (
-    SELECT 
+    SELECT
         t_bab.bab,
         t_bab.bab_romawi,
         t_bab.teks AS teks_bab,
@@ -125,7 +125,7 @@ WITH struktur AS (
         if(angka IS NOT NULL, concat('angka ', angka), NULL) AS angka,
     FROM struktur
 )
-SELECT LIST(concat_ws('/', 'BUKU KESATU', bab, bagian, paragraf, pasal, ayat, huruf, angka)) AS tree 
+SELECT LIST(concat_ws('/', 'BUKU KESATU', bab, bagian, paragraf, pasal, ayat, huruf, angka)) AS tree
 FROM teks_struktur;
     `;
 
@@ -134,7 +134,7 @@ PREPARE cari_teks_regex AS (
     SELECT pasal, ayat, huruf, angka, teks
     FROM t_pasal
     WHERE regexp_matches(teks, ?, 'i')
-    ORDER BY 1,2,3,4  
+    ORDER BY 1,2,3,4
 );
 
 EXECUTE cari_teks_regex('nakhoda');
@@ -145,8 +145,8 @@ PRAGMA create_fts_index(t_pasal, id, teks, stemmer = 'indonesian', stopwords = '
 
 PREPARE cari_teks_fts AS (
     WITH skor_dokumen AS (
-        SELECT 
-            pasal, ayat, huruf, angka, teks, 
+        SELECT
+            pasal, ayat, huruf, angka, teks,
             fts_main_t_pasal.match_bm25(id, ?, conjunctive := 1) AS score
         FROM t_pasal
     )
@@ -160,8 +160,8 @@ EXECUTE cari_teks_fts('nakhoda kapal');
     `;
 
     let humanReadable = `
-SELECT 
-    CASE 
+SELECT
+    CASE
         WHEN angka IS NOT NULL AND ayat > 0 THEN format('Pasal {} ayat ({}) huruf {} angka {}', pasal, ayat, huruf, angka)
         WHEN angka IS NOT NULL THEN format('Pasal {} huruf {} angka {}', pasal, huruf, angka)
         WHEN huruf IS NOT NULL AND ayat > 0 THEN format('Pasal {} ayat ({}) huruf {}', pasal, ayat, huruf)
@@ -169,13 +169,13 @@ SELECT
         WHEN ayat > 0 THEN format('Pasal {} ayat ({})', pasal, ayat)
         ELSE format('Pasal {}', pasal)
     END AS pasal_baca,
-    CASE 
+    CASE
         WHEN angka IS NOT NULL THEN format('{:>8}. {}', angka, teks)
-        WHEN huruf IS NOT NULL THEN format('{:>5}. {}', huruf, teks) 
+        WHEN huruf IS NOT NULL THEN format('{:>5}. {}', huruf, teks)
         WHEN ayat > 0 THEN format('({}) {}', ayat, teks)
         ELSE teks
     END AS teks
-FROM t_pasal 
+FROM t_pasal
 WHERE pasal = 130
 ORDER BY pasal, ayat, huruf, angka;
     `
@@ -203,7 +203,7 @@ CREATE OR REPLACE TABLE unnested_pasal AS (
 
     let traversal = `
 CREATE OR REPLACE MACRO traversed_path(pasal, ayat, huruf) AS (
-    CASE 
+    CASE
         WHEN huruf IS NOT NULL THEN concat(pasal, '(', ayat, ')', huruf)
         WHEN huruf IS NULL AND ayat IS NOT NULL THEN concat(pasal, '(', ayat, ')')
         WHEN huruf IS NULL AND ayat IS NULL THEN pasal
@@ -212,35 +212,35 @@ CREATE OR REPLACE MACRO traversed_path(pasal, ayat, huruf) AS (
 
 PREPARE get_rujukan AS (
     WITH RECURSIVE traverse AS (
-        SELECT 
+        SELECT
             0 AS step,
             *,
             list_value(traversed_path(pasal, ayat, huruf)) AS traversed_path
-        FROM unnested_pasal 
+        FROM unnested_pasal
         WHERE pasal = ?
         UNION ALL
-        SELECT 
+        SELECT
             traverse.step + 1,
             unnested_pasal.*,
             array_append(traverse.traversed_path, traversed_path(traverse.pasal_rujukan, traverse.ayat_rujukan, traverse.huruf_rujukan))
         FROM traverse
-        JOIN unnested_pasal 
-            ON (traverse.huruf_rujukan IS NOT NULL 
-                AND traverse.pasal_rujukan = unnested_pasal.pasal 
-                AND traverse.ayat_rujukan = unnested_pasal.ayat 
+        JOIN unnested_pasal
+            ON (traverse.huruf_rujukan IS NOT NULL
+                AND traverse.pasal_rujukan = unnested_pasal.pasal
+                AND traverse.ayat_rujukan = unnested_pasal.ayat
                 AND traverse.huruf_rujukan = unnested_pasal.huruf)
-            OR (traverse.huruf_rujukan IS NULL 
-                AND traverse.ayat_rujukan IS NOT NULL 
-                AND traverse.pasal_rujukan = unnested_pasal.pasal 
+            OR (traverse.huruf_rujukan IS NULL
+                AND traverse.ayat_rujukan IS NOT NULL
+                AND traverse.pasal_rujukan = unnested_pasal.pasal
                 AND traverse.ayat_rujukan = unnested_pasal.ayat)
-            OR (traverse.huruf_rujukan IS NULL 
-                AND traverse.ayat_rujukan IS NULL 
+            OR (traverse.huruf_rujukan IS NULL
+                AND traverse.ayat_rujukan IS NULL
                 AND traverse.pasal_rujukan = unnested_pasal.pasal)
-        WHERE 
+        WHERE
             NOT list_contains(traverse.traversed_path, traversed_path(traverse.pasal_rujukan, traverse.ayat_rujukan, traverse.huruf_rujukan))
     )
-    SELECT DISTINCT * EXCLUDE (step, traversed_path) 
-    FROM traverse 
+    SELECT DISTINCT * EXCLUDE (step, traversed_path)
+    FROM traverse
     ORDER BY step, pasal, ayat, huruf, angka, pasal_rujukan, ayat_rujukan, huruf_rujukan
 );
 
@@ -296,7 +296,7 @@ Dalam Peraturan Perundang-undangan, pengelompokan materi disusun dalam buku, bab
 
     * bab dengan pasal atau beberapa pasal tanpa bagian dan paragraf;
     * bab dengan bagian dan pasal atau beberapa pasal tanpa paragraf; atau
-    * bab dengan bagian dan paragraf yang berisi pasal atau beberapa pasal. 
+    * bab dengan bagian dan paragraf yang berisi pasal atau beberapa pasal.
 
 ```
 BUKU
@@ -305,7 +305,7 @@ BUKU
             Paragraf
 ```
 
-Satuan aturan dalam Perundang-undangan dirumuskan dalam Pasal yang bisa dirinci ke beberapa ayat dan dirinci dengan huruf abjad kecil dengan titik (`.`) dan jika perlu lebih rinci bisa ditambah dengan angka dengan titik (`.`) dan jika perlu lebih rinci lagi, huruf abjad kecil dan angka dengan kurung tutup (` ) `). 
+Satuan aturan dalam Perundang-undangan dirumuskan dalam Pasal yang bisa dirinci ke beberapa ayat dan dirinci dengan huruf abjad kecil dengan titik (`.`) dan jika perlu lebih rinci bisa ditambah dengan angka dengan titik (`.`) dan jika perlu lebih rinci lagi, huruf abjad kecil dan angka dengan kurung tutup (` ) `).
 
 Contohnya:
 
@@ -325,7 +325,7 @@ Pasal 9
                 c) … .
                     1) …;
                     2) …; (dan, atau, dan/atau)
-                    3) … . 
+                    3) … .
 ```
 
 Aturan ini yang dipakai dalam UU KUHP. Jika diubah ke format tabel, akan menjadi seperti ini:
@@ -379,7 +379,7 @@ Menghitung berapa jumlah pasal di masing-masing paragraf, misalnya, juga sepele:
 
 <DuckDBEditor value={diagramBatang} bind:connProm bind:dbInit />
 
-Format terstruktur membuat banyak hal jadi lebih mudah. Termasuk mengubahnya ke format lain dan memvisualisasikannya. 
+Format terstruktur membuat banyak hal jadi lebih mudah. Termasuk mengubahnya ke format lain dan memvisualisasikannya.
 
 Untuk memeriksa struktur, bentuk visualisasi yang jamak dipakai adalah diagram pohon seperti di bawah ini.
 
@@ -393,7 +393,7 @@ Kueri untuk menyiapkan data yang bisa dikonsumsi oleh pustaka visualisasi:
 <DuckDBEditor value={penalTree} bind:connProm bind:dbInit />
 
 Seperti yang bisa dilihat dari contoh kueri untuk membuat visualisasi, ide utama dari struktur pembuatan `pasal_awal` dan `pasal_akhir` adalah:
-    
+
     1. Menghitung jumlah pasal tak perlu fungsi agregat.
         ```sql
         (pasal_akhir - pasal_awal + 1)
@@ -444,7 +444,7 @@ Konversi ke dalam bentuk tabel dilakukan dengan cara memuat tiap baris ke dalam 
     3. Rujukan ditulis dengan koma (`,`) sebagai pemisah.
         * Pasal 130 ayat 1 merujuk ke Pasal 127 dan Pasal 129. Kolom `pasal_rujukan` diisi dengan `127,129` sesuai urutan penyebutan dalam teks pasal.
         * Pasal 130 ayat 2 merujuk secara implisit ke Pasal yang sama--teks hanya menyebut ayat (1) huruf c. Dalam kondisi demikian, selain `ayat_rujukan` dan `huruf_rujukan`, `pasal_rujukan` harus tetap diisi secara eksplisit.
-        
+
         * Pasal 142 ayat 4 merujuk ke dua Pasal. Pertama adalah Pasal 101 tanpa ayat dan kedua adalah 136 ayat (1) huruf e. Penulisan di kolom `pasal_rujukan` menjadi `101,136`, kolom `ayat_rujukan` menjadi `,1` dan `huruf_rujukan` menjadi `,e`. Ada penambahan teks kosong sebelum koma (`,`) pada nilai kolom `ayat_rujukan` dan `huruf_rujukan`. Ini diperlukan agar urutan tidak kacau jika nilai pada tiap kolom dengan sufiks `_rujukan` dikeluarkan dari kurungan (`unnested`).
 
 Untuk lebih memperjelas, baris dalam tabel `t_pasal` representasi dari struktur terkecil atau terdalam yaitu `angka` selama `angka` memiliki nilai selain `null`. Jika kolom `angka` bernilai `null`, maka naik satu tingkat ke `huruf`, begitu seterusnya. Baris `t_pasal` merujuk pada kombinasi (`pasal`, `ayat`, `huruf`, `angka`).
@@ -461,7 +461,7 @@ Penyimpanan dalam bentuk tabel akan mempermudah pembuatan API. Umumnya, tugas me
 
 Lalu sebaik apa pencarian teks dalam format tabel?
 
-Sudah barang tentu akan lebih baik dari PDF. Bahkan [teks polos saja lebih baik](https://raw.githubusercontent.com/adityawarmanfw/KUHP2023/main/text/uu__1_2023.txt) dari PDF. 
+Sudah barang tentu akan lebih baik dari PDF. Bahkan [teks polos saja lebih baik](https://raw.githubusercontent.com/adityawarmanfw/KUHP2023/main/text/uu__1_2023.txt) dari PDF.
 
 Tapi, [mari kita coba](https://www.youtube.com/watch?v=6usdtGZ-mzI).
 
@@ -473,7 +473,7 @@ Regex juga memungkinkan pencarian lebih dari satu kata kunci.
 
 <DuckDBEditor value="EXECUTE cari_teks_regex('nakhoda|kapal');" bind:connProm bind:dbInit />
 
-Simbol pipa (`|`) berarti `OR` (atau). Jadi, kueri mencari tiap teks pasal yang di dalamnya ada kata "nakhoda" atau "kapal". 
+Simbol pipa (`|`) berarti `OR` (atau). Jadi, kueri mencari tiap teks pasal yang di dalamnya ada kata "nakhoda" atau "kapal".
 
 Yang menjadi masalah kemudian adalah jika ingin mencari pasal yang terdiri dari dua kata tersebut.
 
@@ -489,7 +489,7 @@ Di sistem basis data relasional (RDBMS) mumpuni seperti SQLite, PostgreSQL, dan 
 
 <DuckDBEditor value={ftsText} bind:connProm bind:dbInit />
 
-Salah satu kelebihan FTS dibandingkan regex atau `LIKE` adalah FTS memberikan ranking pada hasil pencarian. Selain itu, `FTS` juga bisa mengembalikan hasil pencarian meski kata tak persis sama. 
+Salah satu kelebihan FTS dibandingkan regex atau `LIKE` adalah FTS memberikan ranking pada hasil pencarian. Selain itu, `FTS` juga bisa mengembalikan hasil pencarian meski kata tak persis sama.
 
 <DuckDBEditor value="EXECUTE cari_teks_fts('pemidanaan anak');" bind:connProm bind:dbInit />
 
@@ -499,7 +499,7 @@ Pencarian "pemidanaan anak" akan memberikan hasil berupa daftar pasal yang terka
 
 Bisakah tabel menyudahi kerepotan "bolak-balik mengusap layar menggulir dokumen" untuk memahami Pasal secara utuh?
 
-Tentu! Ini sudah dilakukan dalam [PenalViz](https://ieeexplore.ieee.org/document/9288591). Meskipun produk akhir penelitian tak bisa saya temukan, setidaknya saya melihat beberapa tangkapan layar. Mereka menggunakan visualisasi graf. 
+Tentu! Ini sudah dilakukan dalam [PenalViz](https://ieeexplore.ieee.org/document/9288591). Meskipun produk akhir penelitian tak bisa saya temukan, setidaknya saya melihat beberapa tangkapan layar. Mereka menggunakan visualisasi graf.
 
 Di sini, saya berusaha memberikan contoh bagaimana memetakan jejaring pasal dari data tabel. Untuk mencapai tujuan itu, pertama-tama tabel `t_pasal` perlu ditransformasi ke bentuk terdenormalisasi dengan mengeluarkan nilai `pasal_rujukan`, `ayat_rujukan`, dan `huruf_rujukan` dari sangkar (`UNNEST`). Selanjutnya, perlu kueri `RECURSIVE CTE` untuk melakukan *traversal*.
 
@@ -529,7 +529,7 @@ Besar kemungkinan KUHP baru juga akan bertahan cukup lama. Saya rasa penting unt
 
 ### Jadi, ini proyek apa sebenarnya?
 
-Tujuan saya hanya sebatas mengubah KUHP 2023 ke dalam format tabel. Format ini kemudian, sebagaimana dibahas dalam tulisan ini, bisa dikonsumsi ke dalam basis data relasional untuk kemudian diturunkan menjadi format atau produk lain. 
+Tujuan saya hanya sebatas mengubah KUHP 2023 ke dalam format tabel. Format ini kemudian, sebagaimana dibahas dalam tulisan ini, bisa dikonsumsi ke dalam basis data relasional untuk kemudian diturunkan menjadi format atau produk lain.
 
 Jika boleh berharap pada pemerintah, saya ingin mereka menyediakan format alternatif untuk mengakses dokumen-dokumen hukum. Mungkin bisa dimulai dalam bentuk teks polos atau html.
 
@@ -541,7 +541,7 @@ Bagian yang saya belum yakin betul adalah terkait penyimpanan rujukan. Sepertiny
 
 ### Pengubahan dokumen PDF ke tabel secara otomatis?
 
-Beberapa pembaca mungkin berharap menemukan bahasan mengenai cara untuk mengubah dokumen-dokumen PDF ke dalam bentuk tabel secara otomatis. Sampai tulisan ini dibuat, saya belum berhasil membuatnya. Pengubahan dari PDF ke dalam tabel di [repositori KUHP2023](https://github.com/adityawarmanfw/KUHP2023/blob/main/tsvs/pasal.tsv) sejauh ini saya lakukan secara manual. 
+Beberapa pembaca mungkin berharap menemukan bahasan mengenai cara untuk mengubah dokumen-dokumen PDF ke dalam bentuk tabel secara otomatis. Sampai tulisan ini dibuat, saya belum berhasil membuatnya. Pengubahan dari PDF ke dalam tabel di [repositori KUHP2023](https://github.com/adityawarmanfw/KUHP2023/blob/main/tsvs/pasal.tsv) sejauh ini saya lakukan secara manual.
 
 Saya sudah mencoba menghubungi beberapa nama yang disebut di atas lewat LinkedIn dan masih menunggu respons. Harapan saya, mereka masih menyimpan program yang mereka bangun untuk mengubah PDF ke XML, atau paling tidak, dokumen yang sudah terkonversi.
 

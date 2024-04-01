@@ -144,7 +144,7 @@
 	let connProm;
 	let dbInit;
 	let results = new Promise(() => ({}));
-	let renderedValue = value.split('\n').slice(1, -1).join('\n')
+	let renderedValue = value.split('\n').length > 1 ? value.split('\n').slice(1, -1).join('\n') : value
 
 	export { value, connProm, dbInit };
 </script>

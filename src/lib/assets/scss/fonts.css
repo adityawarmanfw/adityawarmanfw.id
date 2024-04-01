@@ -70,5 +70,14 @@
 	font-weight: 400;
 	font-stretch: normal;
 	font-style: normal;
-	src: url('../fonts/IosevkaTermSS08-Regular.woff2') format('woff2'), url('../fonts/IosevkaTermSS08-Regular.ttf') format('truetype');
+	src: url('../fonts/IosevkaSS08-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Iosevka Term SS08 Web';
+	font-display: swap;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('../fonts/IosevkaSS08-Bold.ttf') format('truetype');
 }
