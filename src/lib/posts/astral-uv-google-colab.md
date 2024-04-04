@@ -8,7 +8,7 @@ tags:
 excerpt: "uv adalah penginstal paket Python yang lebih satset ketimbang pip, ditulis dalam Rust."
 ---
 
-Selain untuk *scraping* data, saya juga cukup sering pakai Google Colab untuk melakukan perbandingan sederhana (asal-asalan) terhadap enjin pemrosesan data yang sampai sekarang saling kebut-kebutan: DuckDB, Tableau Hyper, dan Databend, untuk menyebut beberapa. Memasang mereka di Google Colab cukup makan waktu, prosesnya bisa terjadi sampai 2 menit. Beberapa minggu lalu saya baca tentang uv dari Astral, pembuat [ruff](https://astral.sh/ruff). Astral [uv](https://astral.sh/blog/uv) adalah penginstal paket Python yang lebih satset ketimbang pip, ditulis dalam Rust.
+Selain untuk *scraping* data, saya juga cukup sering pakai Google Colab untuk melakukan perbandingan sederhana (asal-asalan) terhadap enjin pemrosesan data yang sampai sekarang saling kebut-kebutan: DuckDB, Tableau Hyper, dan Databend, untuk menyebut beberapa. Memasang mereka di Google Colab cukup makan waktu, prosesnya bisa terjadi sampai 2 menit. Bulan Februari lalu saya baca tentang uv dari Astral, pembuat [ruff](https://astral.sh/ruff). Astral [uv](https://astral.sh/blog/uv) adalah penginstal paket Python yang lebih satset ketimbang pip, ditulis dalam Rust.
 
 Rupanya uv juga bisa dipakai di Google Colab dengan cara ini:
 
