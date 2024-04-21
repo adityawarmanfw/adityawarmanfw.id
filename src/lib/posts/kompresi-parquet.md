@@ -216,7 +216,7 @@ File SQLite awal berukuran 2,4GB. Tabel denormalisasi dalam format csv berukuran
 
 Dalam pembuatan file parquet, urutan nilai kolom penting karena memengaruhi kompresi. Jika tabel diurutkan dari kolom teks yang memiliki nilai unique paling sedikit ke paling banyak, file yang dihasilkan akan berukuran lebih kecil lagi.
 
-```
+```sql
 COPY (FROM denormalized ORDER BY source, item_category, sku) TO 'denormalized-ordered-zstd.parquet' (FORMAT 'parquet', CODEC 'zstd');
 -- Run Time (s): real 72.985 user 48.425484 sys 21.464298
 ```
